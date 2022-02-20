@@ -1,0 +1,19 @@
+{
+  "name": "mern-challenge",
+  "version": "1.0.0",
+  "description": "MERN stack challenge or assessment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mern",
+    "redux",
+    "reactjs",
+    "node",
+    "express"
+  ],
+  "author": "Emmanuel Toluwanimi",
+  "license": "ISC"
+}
