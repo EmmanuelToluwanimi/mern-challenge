@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { seed_data } = require('../controller/seeder');
 
 const DB_URL = "mongodb://localhost/mern-challenge"
 
@@ -10,6 +11,7 @@ const connectDB = async () => {
             useUnifiedTopology: true
         })
 
+        seed_data()
         console.log(`MongoDB connected: ${conn.connection.host}`)
     } catch (error) {
         console.error(error)
