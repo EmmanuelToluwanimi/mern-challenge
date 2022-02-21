@@ -3,7 +3,7 @@ const Users = require("../model/user")
 const getUsers =async (req, res) => {
 
     try {
-        const users = await Users.find()
+        const users = await Users.find({}).select(["-_id", "-__v"])
 
         res.status(200).json({
             status: 'success',
